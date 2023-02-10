@@ -1,0 +1,59 @@
+@import "../../../../variables.scss";
+.wrapper {
+  width: 100vw;
+  height: 334px;
+  background-color: #b0a777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .banner-container {
+    width: 100%;
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .banner-contents {
+      max-width: 500px;
+      height: 172px;
+      display: flex;
+
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      font-family: Pretendard sans-serif;
+      .contents-container {
+        height: 94px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #ffffff;
+        font-size: 32px;
+        line-height: 48px;
+        .bold {
+          font-weight: 700;
+        }
+      }
+
+      .button-container {
+        margin-top: 28px;
+        width: 100%;
+      }
+      button {
+        width: 118px;
+        height: 50px;
+        color: #ffffff;
+        background-color: #736e29;
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    .banner-img {
+      width: 500px;
+      height: 230px;
+      background-color: #ffffff;
+    }
+  }
+}

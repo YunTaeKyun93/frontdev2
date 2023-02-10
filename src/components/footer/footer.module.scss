@@ -1,0 +1,121 @@
+@import "../../variables.scss";
+.wrapper {
+  width: 100vw;
+  background-color: $brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .footer-container {
+    width: 100%;
+    max-width: 1180px;
+    height: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 43px;
+    .footer-main {
+      display: block;
+      width: 100%;
+      height: 218px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footer-content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        .footer-header {
+          span {
+            font-family: "Cafe24Ohsquare";
+            color: #ffffff;
+            font-size: 22px;
+          }
+          p {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-family: "Pretendard-Regular";
+            color: #d7bfb9;
+            font-size: 14px;
+          }
+        }
+        .youtube-contents {
+          font-family: "Pretendard-Regular";
+          color: #dadada;
+          display: flex;
+          align-items: center;
+          font-size: 26px;
+          .youtube-logo {
+            margin-right: 11px;
+          }
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+      .footer-content2 {
+        display: flex;
+        gap: 150px;
+        font-size: 14px;
+        font-family: "Pretendard-Regular";
+        color: $fontGrey;
+        .footer-menu {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+
+          .footer-submenu {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            span {
+              display: inline;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+      .footer-content3 {
+        font-family: "Pretendard-Regular";
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        gap: 15px;
+        justify-content: flex-start;
+        height: 100%;
+
+        span {
+          font-weight: 700;
+          color: #ffffff;
+        }
+        p {
+          color: $fontGrey;
+        }
+      }
+    }
+    .border {
+      width: 100%;
+      height: 1px;
+      background-color: #a6756a;
+    }
+    .footer-info {
+      width: 100%;
+      height: 87px;
+      max-width: 1180px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "Pretendard-Regular";
+      font-size: 13px;
+      color: #d7bfb9;
+      .footer-address {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import "../../variables.scss";
+.wrapper {
+  background-color: $white;
+
+  .head-container {
+    width: 100vw;
+    max-width: 1180px;
+    height: 80px;
+    background-color: $white;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+
+    align-items: center;
+    .logo {
+      display: block;
+      font-family: "Cafe24Ohsquare";
+      font-size: 24px;
+      color: $brown;
+      cursor: pointer;
+    }
+    .menu-container {
+      font-family: "Pretendard-Regular";
+      font-size: 17px;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+    }
+    .menu-list {
+      display: flex;
+      gap: 90px;
+      span {
+        position: relative;
+        display: block;
+        cursor: pointer;
+      }
+    }
+    .userIcon {
+      display: block;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    .menuTrigger {
+      // 이렇게해도되는지 질문 할것
+      width: 144px;
+      height: 30px;
+      z-index: 15px;
+      position: absolute;
+      left: -50%;
+    }
+    .sub-menu-close {
+      visibility: hidden;
+      position: absolute;
+      left: -50%;
+      top: 50px;
+      width: 144px;
+      border: 1px solid rgb(222, 216, 216);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+    }
+
+    .sub-menu-open {
+      position: absolute;
+      top: 50px;
+      left: -50%;
+      width: 144px;
+      border: 1px solid rgb(222, 216, 216);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      transition: 0.2s all ease-in-out;
+      z-index: 999;
+      background-color: $white;
+      span {
+        padding: 15px;
+        height: 50px;
+        border-bottom: 1px solid rgb(231, 225, 225);
+        font-size: 16px;
+        vertical-align: center;
+        color: #958d8d;
+        transition: 0.3s all ease-in-out;
+      }
+      span:hover {
+        color: $brown;
+      }
+    }
+  }
+}

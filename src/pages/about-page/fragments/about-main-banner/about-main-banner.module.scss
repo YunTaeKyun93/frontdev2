@@ -1,0 +1,57 @@
+@import "../../../../variables.scss";
+
+.banner-wrapper {
+  width: 100vw;
+  height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../../../assets/images/entrance.png") no-repeat center;
+  background-size: cover;
+  font-family: "Pretendard-Regular";
+
+  .banner-container {
+    width: 1180px;
+    max-width: 1180px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .banner-contents {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 196px;
+      .banner-header {
+        height: 144px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        p,
+        span {
+          font-size: 35px;
+          color: #4d4444;
+        }
+        .bold {
+          font-weight: 900;
+        }
+        .regular {
+          font-weight: 500;
+        }
+      }
+
+      span {
+        margin-top: 29px;
+        font-size: 18px;
+        color: #736e29;
+        cursor: pointer;
+        transition: 0.2s all;
+      }
+      span:hover {
+        color: #4d4444;
+      }
+    }
+  }
+}

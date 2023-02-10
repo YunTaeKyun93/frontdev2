@@ -1,0 +1,22 @@
+
+.my-swiper .swiper-button-prev {
+    background-color: pink;
+    bottom: 0px;
+    right: 100px;
+    top: auto;
+    left: auto;
+  }
+
+.my-swiper .swiper-button-next {
+  background-color: pink;
+  bottom: 0px;
+  right: 0px;
+  top: auto;
+  left: auto;
+  background-image: url('http://localhost:3000/next.svg');
+}
+
+.my-swiper .swiper-button-next:after {
+  content: none;
+}
+

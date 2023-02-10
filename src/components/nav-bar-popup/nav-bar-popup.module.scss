@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+.wrapper {
+  width: 100vw;
+  height: 47px;
+  background-color: $darkBrown;
+  display: flex;
+  justify-content: center;
+  .popup-container {
+    max-width: 1180px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .popup-open {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $white;
+      font-family: "Pretendard-Regular";
+      font-weight: 100;
+      font-size: 16px;
+
+      .closeBtn {
+        height: 21px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .close {
+        font-size: 20px;
+      }
+    }
+  }
+}
+.popupClose {
+  display: none;
+}

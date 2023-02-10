@@ -1,0 +1,54 @@
+@import "../../../../variables.scss";
+
+.wrapper {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background-color: #eaebe5;
+  .newcomer-guide-banner-container {
+    max-width: 1180px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    .newcomer-guide-banner-contents {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      font-family: "Pretendard-Regular";
+      gap: 44px;
+      .newcomer-guide-banner-header {
+        font-size: 30px;
+        color: #683f36;
+      }
+      p {
+        margin-top: 26px;
+        margin-bottom: 15px;
+        color: #4d4444;
+        font-size: 17px;
+      }
+      span {
+        font-size: 17px;
+        color: #8f8f8f;
+        margin-bottom: 55px;
+      }
+      .newcomer-guide-banner-btn {
+        width: 219px;
+        height: 55px;
+        background-color: $oliveGreen;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 18px;
+        border: none;
+        font-family: "Pretendard-Regular";
+      }
+    }
+    .newcomer-guide-banner-image {
+      width: 500px;
+      height: 100%;
+      margin-top: 129px;
+    }
+  }
+}
